@@ -1,4 +1,19 @@
+@import "./../../index";
 .message {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: -0.15px;
+
+  .message-desc {
+    display: flex;
+  }
+  .read {
+    color: var(--color-disabled-text);
+
+  }
+  .unread {
+    font-weight: 600;
+  }
 }
