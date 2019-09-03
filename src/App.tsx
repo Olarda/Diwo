@@ -40,6 +40,14 @@ const notificationList = [
         date: new Date('Thu, Aug 16, 2018 8:02 PM').getTime(),
         status: 'new',
     },
+    {
+        title: 'Marketing & Communications',
+        message: 'Don’t forget to',
+        messageState: 'read',
+        date: new Date('Sun, Sep 01, 2019 8:02 PM').getTime(),
+        whoSent: 'Wayne',
+        seenBy: {avatar: './assets/avatar.png'},
+    },
 
 ];
 

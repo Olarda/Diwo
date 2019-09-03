@@ -9,14 +9,14 @@
   margin: 0 auto;
 }
 .indicator-wrapper .indicator .new,
-.indicator-wrapper .indicator .seen,
+.indicator-wrapper .indicator .avatar,
 .indicator-wrapper .indicator .delivered {
   height: 100%;
 }
 .indicator-wrapper .indicator .new {
   background-color: var(--color-accent);
 }
-.indicator-wrapper .indicator .seen,
+.indicator-wrapper .indicator .avatar,
 .indicator-wrapper .indicator .delivered {
   background-repeat: no-repeat;
   background-position: center;
@@ -25,6 +25,6 @@
   background-color: rgba(96, 103, 112, 0.3);
   background-image: url("delivered.svg");
 }
-.indicator-wrapper .indicator .seen {
+.indicator-wrapper .indicator .avatar {
   background-size: cover;
 }

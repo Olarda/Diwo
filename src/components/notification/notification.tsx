@@ -2,8 +2,8 @@ import * as React from 'react';
 import './notification.css'
 import Ellipse from './../ellipse/ellipse';
 import Message from './../message/message';
-import Indicator from "../indicator/indicator";
-
+import Indicator from '../indicator/indicator';
+import {seenBy} from '../indicator/indicator'
 
 interface NotificationProps {
     title: string;
@@ -12,10 +12,11 @@ interface NotificationProps {
     messageState: string;
     date: number;
     status?: string;
+    seenBy?: seenBy | seenBy[]
 }
 
 function Notification(props: NotificationProps) {
-    const { title, message, messageState, whoSent, date, status } = props;
+    const { title, message, messageState, whoSent, date, status, seenBy } = props;
 
     return  (
         <div className='notification'>
@@ -27,7 +28,7 @@ function Notification(props: NotificationProps) {
                 whoSent={whoSent}
                 date={date}
             />
-            <Indicator status={status}/>
+            <Indicator status={status}  seenBy={seenBy}/>
         </div>
     )
 }
