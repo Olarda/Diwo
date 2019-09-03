@@ -46,9 +46,7 @@ const notificationList = [
 const App: React.FC = () => {
     return (
         <div className="wrapper">
-            {notificationList.map((item, index)=> {
-               return  <Notification key={index} {...item} />
-            })}
+            {notificationList.map((item, index) => <Notification key={index} {...item} />)}
         </div>
     );
 };

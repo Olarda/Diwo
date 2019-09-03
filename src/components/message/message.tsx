@@ -8,7 +8,6 @@ interface MessageProps {
     message: string;
     messageState: string;
     date: number;
-
 }
 
 function Message(props: MessageProps) {
@@ -17,13 +16,12 @@ function Message(props: MessageProps) {
     return (
         <div className='message'>
             <div className='title'>{props.title}</div>
-
-            <div className= {`message-desc ${props.messageState}`}>
+            <div className={`message-desc ${props.messageState}`}>
                 <div className='message-text'>{textMessage}</div>
                 <Date date={props.date}/>
             </div>
         </div>
-    )
+    );
 }
 
 export default Message

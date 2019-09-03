@@ -20,11 +20,13 @@ function Notification(props: NotificationProps) {
     return  (
         <div className='notification'>
             <Ellipse/>
-            <Message title={title}
-                     message={message}
-                     messageState={messageState}
-                     whoSent={whoSent}
-                     date={date}/>
+            <Message
+                title={title}
+                message={message}
+                messageState={messageState}
+                whoSent={whoSent}
+                date={date}
+            />
             <Indicator status={status}/>
         </div>
     )
