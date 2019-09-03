@@ -9,7 +9,7 @@ const notificationInfo = {
     title: 'Loredana Crisan',
     message: 'when we see feed when we',
     messageState: 'unread',
-    date: 1230,
+    date: 'Tue Sep 03 2019 12:52:26',
     whoSent: 'You',
     status: 'delivered',
 };

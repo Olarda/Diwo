@@ -11,7 +11,7 @@ interface NotificationProps {
         whoSent?: string
         message: string
         messageState: string
-        date: number
+        date: string
         status?: string
     }
 }

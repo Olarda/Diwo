@@ -7,7 +7,7 @@ interface MessageProps {
     whoSent?: string
     message: string,
     messageState: string
-    date: number
+    date: string
 
 }
 
