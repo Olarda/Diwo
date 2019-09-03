@@ -2,7 +2,28 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
-}
-.online {
+  overflow: hidden;
+
+  .online, .seen, .delivered{
+    height: 100%;
+  }
+
+  .online {
     background-color: var(--color-accent);
   }
+
+  .seen , .delivered {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .delivered {
+    background-color: rgba(96, 103, 112, 0.3);
+    background-image: url("delivered.svg");
+
+  }
+
+  .seen {
+    background-size: cover;
+  }
+}

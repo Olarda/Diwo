@@ -2,7 +2,25 @@
   border-radius: 50%;
   width: 16px;
   height: 16px;
+  overflow: hidden;
 }
-.online {
+.indicator .online,
+.indicator .seen,
+.indicator .delivered {
+  height: 100%;
+}
+.indicator .online {
   background-color: var(--color-accent);
+}
+.indicator .seen,
+.indicator .delivered {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.indicator .delivered {
+  background-color: rgba(96, 103, 112, 0.3);
+  background-image: url("delivered.svg");
+}
+.indicator .seen {
+  background-size: cover;
 }
