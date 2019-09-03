@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css';
 import Notification from "./components/notification/notification";
 
+
+const statuses = ['online', 'delivered', 'seen'];
+const messageState=['read', 'unread']
 const notificationInfo = {
     title: 'Loredana Crisan',
     message: 'when we see feed when we',
+    messageState: 'unread',
     date: 1230,
     whoSent: 'You',
-    status: 'online',
+    status: 'delivered',
 };
 
 
