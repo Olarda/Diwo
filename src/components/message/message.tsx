@@ -12,7 +12,7 @@ interface MessageProps {
 }
 
 function Message(props: MessageProps) {
-    const textMessage = `${props.whoSent + ':'} ${props.message}`;
+    const textMessage = `${props.whoSent ? props.whoSent + ':' : ''} ${props.message}`;
 
     return (
         <div className='message'>
