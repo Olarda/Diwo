@@ -1,0 +1,108 @@
+// Palette.
+// Here should be defined all basic colours (without calculatable colours: shades and tints)
+// NEVER use these colours in styles directly.
+// Only via "--color-" proxy variable, as used below.
+
+@palette-text: black;
+@palette-bg: white;
+@palette-accent: rgb(0, 100, 200);
+@palette-disabled: #ccc;
+
+// Color variables.
+// Almost all used colours should be here (except, maybe, some unsignificant shading)
+:root {
+  --color-text: @palette-text;
+  --color-text-on-accent: @palette-bg;
+  --color-bg: @palette-bg;
+  --color-accent: @palette-accent;
+  --color-accent-darken: darken(@palette-accent, 10%);
+  --color-accent-lighten: lighten(@palette-accent, 10%);
+
+  --color-disabled: @palette-disabled;
+  --color-border: @palette-disabled;
+
+  --font-family-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-family-main);
+}
+
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+mark {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+label {
+  display: block;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--color-accent-darken);
+}
+
+
+input:disabled {
+  color: var(--color-disabled);
+}
+
+input[type="range"] {
+  height: 0;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: var(--color-text-on-accent);
+
+  outline: none;
+}
+
+button:active {
+  background-color: var(--color-accent-darken);
+}
+
+button:focus {
+  border-color: var(--color-accent-lighten);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
