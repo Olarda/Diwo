@@ -10,6 +10,7 @@ interface NotificationProps {
         title: string
         whoSent?: string
         message: string
+        messageState: string
         date: number
         status?: string
     }
@@ -22,6 +23,7 @@ function Notification(props: NotificationProps) {
             <Ellipse/>
             <Message title={props.notificationInfo.title}
                      message={props.notificationInfo.message}
+                     messageState={props.notificationInfo.messageState}
                      whoSent={props.notificationInfo.whoSent}
                      date={props.notificationInfo.date}/>
             <Indicator status={props.notificationInfo.status}/>
