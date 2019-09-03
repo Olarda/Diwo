@@ -4,12 +4,12 @@
   height: 16px;
   overflow: hidden;
 }
-.indicator .online,
+.indicator .new,
 .indicator .seen,
 .indicator .delivered {
   height: 100%;
 }
-.indicator .online {
+.indicator .new {
   background-color: var(--color-accent);
 }
 .indicator .seen,
