@@ -27,9 +27,9 @@ const notificationList = [
 
     {
         title: 'Loredana Crisan',
-        message: 'when we see feed when we',
+        message: 'When we can see feed when we',
         messageState: 'read',
-        date: 'Tue Sep 03 2019 12:52:26',
+        date: 'Tue Sep 03 2019 8:52:26',
         whoSent: 'You',
         status: 'delivered',
     },
