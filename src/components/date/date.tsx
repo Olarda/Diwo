@@ -3,7 +3,7 @@ import './date.css';
 import {dateFormatting} from '../../utils/index';
 
 interface DateProps {
-    date: string
+    date: number;
 }
 
 function Date(props: DateProps) {

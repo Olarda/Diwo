@@ -3,11 +3,11 @@ import './message.css';
 import Date from "../date/date";
 
 interface MessageProps {
-    title: string
-    whoSent?: string
-    message: string,
-    messageState: string
-    date: string
+    title: string;
+    whoSent?: string;
+    message: string;
+    messageState: string;
+    date: number;
 
 }
 

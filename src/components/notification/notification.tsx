@@ -6,27 +6,26 @@ import Indicator from "../indicator/indicator";
 
 
 interface NotificationProps {
-    notificationInfo: {
-        title: string
-        whoSent?: string
-        message: string
-        messageState: string
-        date: string
-        status?: string
-    }
+    title: string;
+    whoSent?: string;
+    message: string;
+    messageState: string;
+    date: number;
+    status?: string;
 }
 
 function Notification(props: NotificationProps) {
+    const { title, message, messageState, whoSent, date, status } = props;
 
     return  (
         <div className='notification'>
             <Ellipse/>
-            <Message title={props.notificationInfo.title}
-                     message={props.notificationInfo.message}
-                     messageState={props.notificationInfo.messageState}
-                     whoSent={props.notificationInfo.whoSent}
-                     date={props.notificationInfo.date}/>
-            <Indicator status={props.notificationInfo.status}/>
+            <Message title={title}
+                     message={message}
+                     messageState={messageState}
+                     whoSent={whoSent}
+                     date={date}/>
+            <Indicator status={status}/>
         </div>
     )
 }
