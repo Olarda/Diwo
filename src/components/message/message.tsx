@@ -16,7 +16,7 @@ function Message(props: MessageProps) {
 
     return (
         <div className='message'>
-            <div>{props.title}</div>
+            <div className='title'>{props.title}</div>
 
             <div className= {`message-desc ${props.messageState}`}>
                 <div>{textMessage}</div>
