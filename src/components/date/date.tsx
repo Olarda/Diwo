@@ -1,14 +1,16 @@
 import * as React from 'react';
 
+import {dateFormatting} from '../../utils/index';
+
 interface DateProps {
-    date: number
+    date: string
 }
 
 function Date(props: DateProps) {
-
+    const time = dateFormatting(props.date);
     return (
         <div className='date'>
-            <div>{props.date}</div>
+            <div>{time}</div>
         </div>
     )
 }
