@@ -1,29 +1,33 @@
-.indicator {
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
+.indicator-wrapper {
+  width: 55px;
+  .indicator {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    margin: 0 auto;
 
-  .new, .seen, .delivered{
-    height: 100%;
-  }
+    .new, .seen, .delivered {
+      height: 100%;
+    }
 
-  .new {
-    background-color: var(--color-accent);
-  }
+    .new {
+      background-color: var(--color-accent);
+    }
 
-  .seen , .delivered {
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+    .seen, .delivered {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-  .delivered {
-    background-color: rgba(96, 103, 112, 0.3);
-    background-image: url("delivered.svg");
+    .delivered {
+      background-color: rgba(96, 103, 112, 0.3);
+      background-image: url("delivered.svg");
 
-  }
+    }
 
-  .seen {
-    background-size: cover;
+    .seen {
+      background-size: cover;
+    }
   }
 }

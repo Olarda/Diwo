@@ -1,11 +1,8 @@
-
 .date {
   display: flex;
 }
-.date:before{
+.date:before {
   content: '·';
   display: inline;
-
   margin: 0px 4px;
-
 }

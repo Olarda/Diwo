@@ -1,26 +1,30 @@
-.indicator {
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  overflow: hidden;
+.indicator-wrapper {
+  width: 55px;
 }
-.indicator .new,
-.indicator .seen,
-.indicator .delivered {
+.indicator-wrapper .indicator {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.indicator-wrapper .indicator .new,
+.indicator-wrapper .indicator .seen,
+.indicator-wrapper .indicator .delivered {
   height: 100%;
 }
-.indicator .new {
+.indicator-wrapper .indicator .new {
   background-color: var(--color-accent);
 }
-.indicator .seen,
-.indicator .delivered {
+.indicator-wrapper .indicator .seen,
+.indicator-wrapper .indicator .delivered {
   background-repeat: no-repeat;
   background-position: center;
 }
-.indicator .delivered {
+.indicator-wrapper .indicator .delivered {
   background-color: rgba(96, 103, 112, 0.3);
   background-image: url("delivered.svg");
 }
-.indicator .seen {
+.indicator-wrapper .indicator .seen {
   background-size: cover;
 }

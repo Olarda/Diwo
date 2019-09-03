@@ -1,11 +1,14 @@
 @import "./../../index";
-
+@import url('https://www.fontify.me/wf/28ea2e32b70da0a2480848ba03cd6146');
 .message {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: -0.15px;
+  flex: 1;
+  margin-left: 12px;
+
 
   .title {
     font-size: 16px;
@@ -14,7 +17,19 @@
 
   .message-desc {
     display: flex;
+    align-items: center;
     margin-top: 5px;
+  }
+
+
+  .message-text, .title  {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: 1.2em;
   }
 
   .read {

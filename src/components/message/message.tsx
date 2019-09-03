@@ -19,7 +19,7 @@ function Message(props: MessageProps) {
             <div className='title'>{props.title}</div>
 
             <div className= {`message-desc ${props.messageState}`}>
-                <div>{textMessage}</div>
+                <div className='message-text'>{textMessage}</div>
                 <Date date={props.date}/>
             </div>
         </div>

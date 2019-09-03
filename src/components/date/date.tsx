@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import './date.css';
 import {dateFormatting} from '../../utils/index';
 
 interface DateProps {
