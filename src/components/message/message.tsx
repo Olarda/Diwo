@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './message.css';
-import Date from "../date/date";
+import Date from '../date/date';
 
 interface MessageProps {
     title: string;

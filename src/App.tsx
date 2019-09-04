@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Notification from "./components/notification/notification";
+import Notification from './components/notification/notification';
 
 
-//подсказки
+//управление состояниями
 const statuses = ['new', 'delivered', 'seen'];
 const messageState = ['read', 'unread'];
 console.log(statuses, 'состояния индикатора');
@@ -20,7 +20,7 @@ const notificationList = [
         title: 'Website redesign',
         message: 'when we see feed when we',
         messageState: 'unread',
-        date: new Date('Tue Sep 03 2019 15:32:26').getTime(),
+        date: new Date('Wed Sep 04 2019 05:32:26').getTime(),
         whoSent: 'Biz Stone',
         status: 'new',
     },
@@ -29,7 +29,7 @@ const notificationList = [
         title: 'Loredana Crisan',
         message: 'When we can see feed when we',
         messageState: 'read',
-        date: new Date('Tue Sep 03 2019 8:52:26').getTime(),
+        date: new Date('Wed Sep 04 2019 8:52:26').getTime(),
         whoSent: 'You',
         status: 'delivered',
     },
@@ -53,7 +53,7 @@ const notificationList = [
 
 const App: React.FC = () => {
     return (
-        <div className="wrapper">
+        <div className='wrapper'>
             {notificationList.map((item, index) => <Notification key={index} {...item} />)}
         </div>
     );
